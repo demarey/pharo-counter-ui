@@ -1,0 +1,12 @@
+CGOProject {
+	#description : 'Small UI for the counter model.',
+	#version : '0.1.0-dev',
+	#name : #Counter-UI,
+	#repository : CGOGitRepository {
+		#repositoryUrl : 'git@github.com:demarey/pharo-counter-ui.git',
+		#subdirectory : ''
+	},
+	#unitNames : [
+		#Counter-UI-Spec
+	]
+}

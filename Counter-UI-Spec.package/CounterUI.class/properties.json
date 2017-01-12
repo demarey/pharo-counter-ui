@@ -1,0 +1,17 @@
+{
+	"category" : "Counter-UI-Spec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ChristopheDemarey 11/25/2016 16:14",
+	"instvars" : [
+		"counterLabel",
+		"incButton",
+		"decButton",
+		"counter" ],
+	"name" : "CounterUI",
+	"pools" : [
+		 ],
+	"super" : "ComposableModel",
+	"type" : "normal" }
