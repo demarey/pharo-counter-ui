@@ -1,12 +1,21 @@
-CGOProject {
-	#description : 'Small UI for the counter model.',
-	#version : '0.1.0-dev',
+CGOProject2 {
 	#name : #Counter-UI,
-	#repository : CGOGitRepository {
-		#repositoryUrl : 'git@github.com:demarey/pharo-counter-ui.git',
-		#subdirectory : ''
+	#description : 'Small UI for the counter model.',
+	#externalProjects : {
+		#Counter : CGOCargoProjectDependency {
+			#repository : CGOGitRepository {
+				#repositoryUrl : 'git+ssh://git@github.com/demarey/pharo-counter.git',
+				#version : 'master'
+			}
+		}
 	},
-	#unitNames : [
-		#Counter-UI-Spec
+	#units : [
+		CGOPackageUnit2 {
+			#name : #Counter-UI-Spec,
+			#description : 'Core package with the counter UI based on Spec.',
+			#dependencies : [
+				#'Counter::Counter-Core'
+			]
+		}
 	]
 }
