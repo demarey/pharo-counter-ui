@@ -1,4 +1,4 @@
-CGOProject2 {
+OngoingProject {
 	#name : #Counter-UI,
 	#description : 'Small UI for the counter model.',
 	#externalProjects : {
@@ -10,11 +10,11 @@ CGOProject2 {
 		}
 	},
 	#units : [
-		CGOPackageUnit2 {
+		OngoingPackageUnit {
 			#name : #Counter-UI-Spec,
 			#description : 'Core package with the counter UI based on Spec.',
 			#dependencies : [
-				#'Counter-Core'
+				#'Counter::Counter-Core'
 			]
 		}
 	]
